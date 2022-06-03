@@ -6,3 +6,10 @@ from .models import Akcesoria
 def zwroc_produkty(request):
     produkt = Akcesoria.objects.all()
     return render(request, 'sklep_szablony/glowna.html', {'produkty': produkt})
+
+
+def zwroc_karty_graficzne(request):
+    karty_graficzne = Akcesoria.objects.filter(kategoria=1)
+    return render(request, 'sklep_szablony/karty_graficzne.html', {'karty_graficzne': karty_graficzne})
+
+
