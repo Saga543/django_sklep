@@ -38,3 +38,4 @@ class Akcesoria(models.Model):
     class Meta:
         verbose_name = "Akcesorium"
         verbose_name_plural = "Akcesoria"
+

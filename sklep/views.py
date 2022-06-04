@@ -21,3 +21,7 @@ def zwroc_procesory(request):
 def zwroc_peryferia(request):
     peryferia = Akcesoria.objects.filter(kategoria=3)
     return render(request, 'sklep_szablony/peryferia.html', {'peryferia': peryferia})
+
+
+def koszyk(request):
+    return render(request, 'sklep_szablony/koszyk.html', None)
