@@ -14,15 +14,15 @@
             </div>
             <div class="col" style="border-style: solid;">
 
-                {% for karta in karty_graficzne %}
+                {% for peryferium in peryferia %}
                 <div class="row">
-                        <div class="col m-1" style="border-style: solid;">
-                            <h5>{{karta}}</h5>
-                            <p>Kategoria: {{karta.kategoria}}</p>
-                            <p>Producent: {{karta.producent}}</p>
-                            <p>Opis: {{karta.opis}}</p>
-                            <p>Cena: {{karta.cena}}</p>
-                        </div>
+                    <div class="col m-1" style="border-style: solid;">
+                        <h5>{{peryferium}}</h5>
+                        <p>Kategoria: {{peryferium.kategoria}}</p>
+                        <p>Producent: {{peryferium.producent}}</p>
+                        <p>Opis: {{peryferium.opis}}</p>
+                        <p>Cena: {{peryferium.cena}}</p>
+                    </div>
                 </div>
                 {% endfor %}
 

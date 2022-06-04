@@ -7,24 +7,25 @@
                     <ul>
                         <li><a href="{% url 'glowna' %}">Wszystkie</a></li>
                         <li><a href="{% url 'karty_graficzne' %}">Karty graficzne</a></li>
-                        <li><a href="#">Peryferia</a></li>
-                        <li><a href="#">Procesory</a></li>
+                        <li><a href="{% url 'peryferia' %}">Peryferia</a></li>
+                        <li><a href="{% url 'procesory' %}">Procesory</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="col" style="border-style: solid;">
 
-                        {% for produkt in produkty %}
+                {% for produkt in produkty %}
                 <div class="row">
-                        <div class="col-12 m-1" style="border-style: solid;">
+                        <div class="col m-1" style="border-style: solid;">
                             <h5>{{produkt}}</h5>
                             <p>Kategoria: {{produkt.kategoria}}</p>
                             <p>Producent: {{produkt.producent}}</p>
                             <p>Opis: {{produkt.opis}}</p>
                             <p>Cena: {{produkt.cena}}</p>
                         </div>
-                        {% endfor %}
                 </div>
+                {% endfor %}
+
             </div>
         </div>
         {% endblock %}

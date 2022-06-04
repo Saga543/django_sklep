@@ -13,3 +13,11 @@ def zwroc_karty_graficzne(request):
     return render(request, 'sklep_szablony/karty_graficzne.html', {'karty_graficzne': karty_graficzne})
 
 
+def zwroc_procesory(request):
+    procesory = Akcesoria.objects.filter(kategoria=2)
+    return render(request, 'sklep_szablony/procesory.html', {'procesory': procesory})
+
+
+def zwroc_peryferia(request):
+    peryferia = Akcesoria.objects.filter(kategoria=3)
+    return render(request, 'sklep_szablony/peryferia.html', {'peryferia': peryferia})

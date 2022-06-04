@@ -14,14 +14,14 @@
             </div>
             <div class="col" style="border-style: solid;">
 
-                {% for karta in karty_graficzne %}
+                {% for procesor in procesory %}
                 <div class="row">
                         <div class="col m-1" style="border-style: solid;">
-                            <h5>{{karta}}</h5>
-                            <p>Kategoria: {{karta.kategoria}}</p>
-                            <p>Producent: {{karta.producent}}</p>
-                            <p>Opis: {{karta.opis}}</p>
-                            <p>Cena: {{karta.cena}}</p>
+                            <h5>{{procesor}}</h5>
+                            <p>Kategoria: {{procesor.kategoria}}</p>
+                            <p>Producent: {{procesor.producent}}</p>
+                            <p>Opis: {{procesor.opis}}</p>
+                            <p>Cena: {{procesor.cena}}</p>
                         </div>
                 </div>
                 {% endfor %}
